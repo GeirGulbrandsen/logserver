@@ -1,3 +1,4 @@
 /node_modules/
 /.idea/
 /logserver.iml
+logs.json
