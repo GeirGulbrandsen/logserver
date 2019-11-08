@@ -10,8 +10,10 @@ app.post('/logs', function (req, res) {
 
     var outputFilename = './logs.json'; // path of the file to output
 
+    var data = req.body.textParameter +" : "+ JSON.parse(req.body.numberParameter) + "\n";
+    // var data = JSON.stringify(value, null, 4) + "\n";
 
-    fs.appendFileSync(outputFilename, JSON.stringify(JSON.parse(req.body.payload), null, 4) + "\n"); // write to the file system
+    fs.appendFileSync(outputFilename, data); // write to the file system
 
     res.send('Saved to ' + outputFilename);
 
