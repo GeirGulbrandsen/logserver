@@ -2,7 +2,7 @@
   "name": "logserver",
   "version": "1.0.0",
   "dependencies": {
-    "express": "^4.22.1",
+    "express": "^4.22.2",
     "body-parser": "latest"
   }
 }
